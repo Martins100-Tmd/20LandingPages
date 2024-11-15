@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&family=Inter" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="w-full flex justify-center">
+        <nav
+            class="flex flex-row items-center w-full py-4 sm:py-7 border-[#000] border-b border-opacity-[12%] px-3 sm:px-10 justify-between">
+            <div class="flex justify-start w-full self-center">
+                <p class="font-medium text-2xl font-Lob text-start">Foodieland</p>
+            </div>
+            <ul class="w-full hidden sm:flex flex-row items-center gap-3 self-center justify-between">
+                <li class="font-Inter font-semibold text-center text-sm"><a href="/Index.html">Home</a></li>
+                <li class="font-Inter font-semibold text-center text-sm"><a href="recipe.html">Recipe</a></li>
+                <li class="font-Inter font-semibold text-start text-sm"><a href="blog.html">Blog</a></li>
+                <li class="font-Inter font-semibold text-center text-sm"><a href="/contact.html">Contact</a></li>
+                <li class="font-Inter font-semibold text-center text-sm">About us</li>
+            </ul>
+            <div
+                class="w-full hidden sm:flex flex-row items-center gap-10 mt-2 justify-center sm:justify-end self-center">
+                <i class="w-[10px] h-[20px] text-center fa">&#xf09a;</i>
+                <i class="w-[10px] h-[20px] text-center fa">&#xf099;</i>
+                <i class="w-[10px] h-[20px] text-center fa">&#xf16d;</i>
+            </div>
+            <div class="w-full flex justify-end sm:hidden self-center" onclick="slide()">
+                <i class="material-icons text-3xl self-center">menu</i>
+            </div>
+        </nav>
+        <aside
+            class="h-screen w-3/4 absolute -left-full bg-white z-[100] duration-500 sm:hidden flex flex-col items-start gap-6">
+            <div class="flex justify-start w-full self-center border-[#000] border-b border-opacity-[12%] p-4">
+                <p class="font-medium text-2xl font-Lob text-start">Foodieland</p>
+            </div>
+            <ul class="w-full flex flex-col items-center gap-3 self-center justify-between p-4">
+                <li class="font-Inter font-semibold text-start text-lg w-full"><a href="/Index.html">Home</a></li>
+                <li class="font-Inter font-semibold text-center text-lg w-full"><a href="recipe.html">Recipe</a></li>
+                <li class="font-Inter font-semibold text-start text-lg w-full"><a href="/blog.html">Blog</a></li>
+                <li class="font-Inter font-semibold text-start text-lg w-full"><a href="/contact.html">Contact</a></li>
+                <li class="font-Inter font-semibold text-start text-lg w-full">About us</li>
+            </ul>
+            <div class="w-full flex flex-row items-start gap-10 mt-2 justify-start self-center p-4">
+                <i class="w-[10px] h-[20px] text-center fa">&#xf09a;</i>
+                <i class="w-[10px] h-[20px] text-center fa">&#xf099;</i>
+                <i class="w-[10px] h-[20px] text-center fa">&#xf16d;</i>
+            </div>
+        </aside>
+    </header>
+    <section class="flex sm:flex-row flex-col items-center sm:w-[97%] mx-auto w-full p-3 sm:p-5">
+        <section class="md:w-[55%] sm:w-3/5 w-full flex flex-col items-start">
+            <div class="flex flex-col items-start w-full sm:gap-5 gap-3">
+                <p class="font-Inter text-start sm:text-4xl text-2xl font-black">Health Japanese Fried Rice</p>
+                <div class="flex flex-row items-center justify-between sm:w-[85%] w-full">
+                    <div class="flex flex-row items-center gap-1">
+                        <img src="./assets/john.png"
+                            class="object-cover w-[35px] h-[35px] sm:w-[40px] sm:h-[40px] rounded-full" alt="john" />
+                        <div class="flex flex-col items-start gap-1">
+                            <p class="text-[12px] font-medium sm:text-[13px] text-start font-Inter">John Doe</p>
+                            <p
+                                class="font-thin text-black text-opacity-70 text-[10px] sm:text-xs text-start font-Inter">
+                                15 March, 2022</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-center gap-1">
+                        <i class="material-icons text-2xl text-start self-center">timer</i>
+                        <div class="flex flex-col items-start gap-1">
+                            <p class="text-[12px] font-medium sm:text-[13px] text-start font-Inter">PREP TIME</p>
+                            <p
+                                class="font-thin text-black text-opacity-70 text-[10px] sm:text-xs text-start font-Inter">
+                                15 Minutes</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-center gap-1">
+                        <i class="material-icons text-2xl text-start self-center">timer</i>
+                        <div class="flex flex-col items-start gap-1">
+                            <p class="text-[12px] font-medium sm:text-[13px] text-start font-Inter">COOK TIME</p>
+                            <p
+                                class="font-thin text-black text-opacity-70 text-[10px] sm:text-xs text-start font-Inter">
+                                15 Minutes</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-center gap-1">
+                        <i class="material-icons text-2xl text-start self-center">restaurant</i>
+                        <p class="text-[12px] font-medium sm:text-[13px] text-start font-Inter">chicken</p>
+                    </div>
+                </div>
+            </div>
+            <img src='/assets/egg.png' class='w-[90%] rounded-xl my-5' alt='egg' />
+        </section>
+    </section>
+    <section
+        class="flex flex-col sm:flex-row items-center w-[97%] mb-10 mx-auto sm:w-[90%] rounded-3xl shadow bg-gradient-to-tr from-[#E7FAFE] via-purple-200 to-white justify-center relative overflow-hidden">
+        <img src="/assets/letleft.png" class="sm:flex hidden w-1/5 sm:w-[25%] self-end" />
+        <div class="flex justify-center flex-col items-center sm:w-1/2 mx-auto w-full gap-3 sm:py-5 px-4 pt-4">
+            <p class="font-Inter font-black text-center w-full text-2xl sm:text-4xl">Deliciouness to your inbox</p>
+            <p class="font-Inter font-thin text-center w-full text-[11px] sm:leading-[2rem] sm:text-xs">
+                Get deliciousness delivered straight to your inbox! Enjoy a handpicked selection of mouth-watering
+                recipes, cooking tips, and
+                exciting meal ideas that will inspire your cooking and make every dish a delightful experience.
+            </p>
+            <div class="flex flex-row items-center w-full bg-white p-1.5 rounded-lg">
+                <input type="text"
+                    class="bg-white w-3/5 sm:w-3/4 h-full outline-none border-none text-xs font-Inter p-2.5 self-center"
+                    placeholder="Your email address..." />
+                <button
+                    class="bg-black text-white text-center sm:w-1/4 w-2/5 font-Inter text-[11px] p-2.5 rounded-xl self-center">
+                    Suscribe
+                </button>
+            </div>
+        </div>
+        <img src="/assets/letright.png" class="sm:flex hidden object-cover w-1/5 sm:w-[25%] self-end" />
+        <div class="sm:hidden flex flex-row w-full justify-between">
+            <img src="/assets/letleft.png" class="object-cover w-1/5 sm:w-[25%] self-end" />
+            <img src="/assets/letright.png" class="object-cover w-1/5 sm:w-[25%] self-end" />
+        </div>
+    </section>
+    <footer
+        class="flex flex-col items-center w-full mx-auto p-3 mt-5 sm:px-7 gap-3 justify-between border-[#000] border-t border-opacity-[12%]">
+        <div class="w-full flex flex-col sm:flex-row">
+            <div class="hidden sm:flex w-full"></div>
+            <p
+                class="font-Inter sm:text-base text-xs text-center text-black text-opacity-75 flex justify-center w-full">
+                &copy; 2024 Flowbase. Powered by
+                <span class="text-red-300 ml-1">Webflow</span>
+            </p>
+            <div class="w-1/2 sm:w-2/5 flex flex-row items-center gap-1 mt-2 justify-between self-center">
+                <i class="w-[10px] h-[20px] text-center fa">&#xf09a;</i>
+                <i class="w-[10px] h-[20px] text-center fa">&#xf099;</i>
+                <i class="w-[10px] h-[20px] text-center fa">&#xf16d;</i>
+            </div>
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+
+</html>
