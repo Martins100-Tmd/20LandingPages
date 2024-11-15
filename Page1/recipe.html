@@ -54,16 +54,16 @@
             </div>
         </aside>
     </header>
-    <section class="flex sm:flex-row flex-col items-center sm:w-[97%] mx-auto w-full p-3 sm:p-5">
-        <section class="md:w-[55%] sm:w-3/5 w-full flex flex-col items-start">
-            <div class="flex flex-col items-start w-full sm:gap-5 gap-3">
+    <section class="flex flex-col items-center sm:w-[92%] mx-auto w-full p-3 sm:p-5">
+        <div class='w-full flex flex-row justify-between'>
+            <div class="flex flex-col items-start md:w-3/4 sm:w-[70%] w-full sm:gap-5 gap-3">
                 <p class="font-Inter text-start sm:text-4xl text-2xl font-black">Health Japanese Fried Rice</p>
                 <div class="flex flex-row items-center justify-between sm:w-[85%] w-full">
                     <div class="flex flex-row items-center gap-1">
                         <img src="./assets/john.png"
                             class="object-cover w-[35px] h-[35px] sm:w-[40px] sm:h-[40px] rounded-full" alt="john" />
                         <div class="flex flex-col items-start gap-1">
-                            <p class="text-[12px] font-medium sm:text-[13px] text-start font-Inter">John Doe</p>
+                            <p class="text-[12px] font-medium sm:text-[11px] text-start font-Inter">John Doe</p>
                             <p
                                 class="font-thin text-black text-opacity-70 text-[10px] sm:text-xs text-start font-Inter">
                                 15 March, 2022</p>
@@ -72,7 +72,7 @@
                     <div class="flex flex-row items-center gap-1">
                         <i class="material-icons text-2xl text-start self-center">timer</i>
                         <div class="flex flex-col items-start gap-1">
-                            <p class="text-[12px] font-medium sm:text-[13px] text-start font-Inter">PREP TIME</p>
+                            <p class="text-[12px] font-medium sm:text-[11px] text-start font-Inter">PREP TIME</p>
                             <p
                                 class="font-thin text-black text-opacity-70 text-[10px] sm:text-xs text-start font-Inter">
                                 15 Minutes</p>
@@ -81,7 +81,7 @@
                     <div class="flex flex-row items-center gap-1">
                         <i class="material-icons text-2xl text-start self-center">timer</i>
                         <div class="flex flex-col items-start gap-1">
-                            <p class="text-[12px] font-medium sm:text-[13px] text-start font-Inter">COOK TIME</p>
+                            <p class="text-[12px] font-medium sm:text-[11px] text-start font-Inter">COOK TIME</p>
                             <p
                                 class="font-thin text-black text-opacity-70 text-[10px] sm:text-xs text-start font-Inter">
                                 15 Minutes</p>
@@ -89,12 +89,69 @@
                     </div>
                     <div class="flex flex-row items-center gap-1">
                         <i class="material-icons text-2xl text-start self-center">restaurant</i>
-                        <p class="text-[12px] font-medium sm:text-[13px] text-start font-Inter">chicken</p>
+                        <p class="text-[12px] font-medium sm:text-[11px] text-start font-Inter">chicken</p>
                     </div>
                 </div>
             </div>
-            <img src='/assets/egg.png' class='w-[90%] rounded-xl my-5' alt='egg' />
-        </section>
+            <div class='flex flex-row items-center md:w-1/4 sm:w-[30%] w-full gap-4 justify-end self-end'>
+                <div class='w-[50px] h-[50px] rounded-full shadow-sm bg-[#E7FAFE] flex justify-center'>
+                    <i class='material-icons text-xl text-center self-center'>print</i>
+                </div>
+                <div class='w-[50px] h-[50px] rounded-full shadow-sm bg-[#E7FAFE] flex justify-center'>
+                    <i class='material-icons text-xl text-center self-center'>print</i>
+                </div>
+            </div>
+        </div>
+        <div class='flex sm:flex-row flex-col items-center w-full gap-5 sm:gap-7 mt-3'>
+            <img src='/assets/egg.png' class='w-[90%] sm:w-[70%] md:w-3/4 max-h-[500px] object-cover rounded-xl my-5'
+                alt='egg' />
+            <div
+                class='bg-[#E7FAFE] px-3 py-4 flex flex-col sm:w-[30%] md:w-1/4 w-full self-stretch justify-between rounded-xl'>
+                <div class='flex flex-col items-center w-full'>
+                    <p class='font-Inter font-black text-start text-2xl mb-3'>Nutrition Information</p>
+                    <div
+                        class='flex flex-row items-center justify-between w-full border-b border-black border-opacity-70 py-2.5'>
+                        <p class='font-Inter text-sm text-black text-opacity-70'>Calories</p>
+                        <p class='font-Inter text-base text-black text-opacity-90'>219.9 kcal</p>
+                    </div>
+                    <div
+                        class='flex flex-row items-center justify-between w-full border-b border-black border-opacity-70 py-2.5'>
+                        <p class='font-Inter text-sm text-black text-opacity-70'>Total fat</p>
+                        <p class='font-Inter text-base text-black text-opacity-90'>10.7g</p>
+                    </div>
+                    <div
+                        class='flex flex-row items-center justify-between w-full border-b border-black border-opacity-70 py-2.5'>
+                        <p class='font-Inter text-sm text-black text-opacity-70'>Protein</p>
+                        <p class='font-Inter text-base text-black text-opacity-90'>7.9g</p>
+                    </div>
+                    <div
+                        class='flex flex-row items-center justify-between w-full border-b border-black border-opacity-70 py-2.5'>
+                        <p class='font-Inter text-sm text-black text-opacity-70'>Carbonhydrates</p>
+                        <p class='font-Inter text-base text-black text-opacity-90'>22.3g</p>
+                    </div>
+                    <div
+                        class='flex flex-row items-center justify-between w-full border-b border-black border-opacity-70 py-2.5'>
+                        <p class='font-Inter text-sm text-black text-opacity-70'>Cholesterol</p>
+                        <p class='font-Inter text-base text-black text-opacity-90'>37.4mg</p>
+                    </div>
+                </div>
+                <p class='font-Inter w-full text-center px-5 text-[10px]'>
+                    Get detailed nutrition information to make informed choices about your meals. Discover insights on
+                    calories, and nutrients.
+                </p>
+            </div>
+        </div>
+        <div class='w-full flex justify-center'>
+            <p class='font-Inter text-center w-full font-thin text-sm'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
     </section>
     <section
         class="flex flex-col sm:flex-row items-center w-[97%] mb-10 mx-auto sm:w-[90%] rounded-3xl shadow bg-gradient-to-tr from-[#E7FAFE] via-purple-200 to-white justify-center relative overflow-hidden">
