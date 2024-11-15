@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel='stylesheet' href='./output.css' />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Lobster&family=Inter' />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class='w-full flex justify-center'>
+        <nav
+            class='flex flex-row items-center w-full py-4 sm:py-7 border-[#000] border-b border-opacity-[12%] px-3 sm:px-10 justify-between'>
+            <div class='flex justify-start w-full self-center'>
+                <p class='font-medium text-2xl font-Lob text-start'>Foodieland</p>
+            </div>
+            <ul class='w-full hidden sm:flex flex-row items-center gap-3 self-center justify-between'>
+                <li class='font-Inter font-semibold text-center text-sm'><a href='/Index.html'>Home</a></li>
+                <li class='font-Inter font-semibold text-center text-sm'>Recipes</li>
+                <li class='font-Inter font-semibold text-start text-sm'><a href='blog.html'>Blog</a></li>
+                <li class='font-Inter font-semibold text-center text-sm'><a href='/contact.html'>Contact</a></li>
+                <li class='font-Inter font-semibold text-center text-sm'>About us</li>
+            </ul>
+            <div
+                class='w-full hidden sm:flex flex-row items-center gap-10 mt-2 justify-center sm:justify-end self-center'>
+                <i class='w-[10px] h-[20px] text-center fa'>&#xf09a;</i>
+                <i class='w-[10px] h-[20px] text-center fa'>&#xf099;</i>
+                <i class='w-[10px] h-[20px] text-center fa'>&#xf16d;</i>
+            </div>
+            <div class='w-full flex justify-end sm:hidden self-center' onclick='slide()'>
+                <i class='material-icons text-3xl self-center'>menu</i>
+            </div>
+        </nav>
+        <aside
+            class='h-screen w-3/4 absolute -left-full bg-white z-[100] duration-500 sm:hidden flex flex-col items-start gap-6'>
+            <div class='flex justify-start w-full self-center border-[#000] border-b border-opacity-[12%] p-4'>
+                <p class='font-medium text-2xl font-Lob text-start'>Foodieland</p>
+            </div>
+            <ul class='w-full flex flex-col items-center gap-3 self-center justify-between p-4'>
+                <li class='font-Inter font-semibold text-start text-lg w-full'><a href='/Index.html'>Home</a></li>
+                <li class='font-Inter font-semibold text-start text-lg w-full'>Recipes</li>
+                <li class='font-Inter font-semibold text-start text-lg w-full'><a href='/blog.html'>Blog</a></li>
+                <li class='font-Inter font-semibold text-start text-lg w-full'><a href='/contact.html'>Contact</a></li>
+                <li class='font-Inter font-semibold text-start text-lg w-full'>About us</li>
+            </ul>
+            <div class='w-full flex flex-row items-start gap-10 mt-2 justify-start self-center p-4'>
+                <i class='w-[10px] h-[20px] text-center fa'>&#xf09a;</i>
+                <i class='w-[10px] h-[20px] text-center fa'>&#xf099;</i>
+                <i class='w-[10px] h-[20px] text-center fa'>&#xf16d;</i>
+            </div>
+        </aside>
+    </header>
+    <section class='w-full flex justify-center mt-[3%] mb-[3%]'>
+        <p class='font-Inter font-black text-center sm:text-5xl text-2xl'>Contact Us</p>
+    </section>
+    <section class='w-4/5 mx-auto flex flex-row items-center gap-10'>
+        <div class='sm:flex hidden sm:w-1/3 p-3 bg-gradient-to-t from-[#e7fafe] via-purple-200 to-white rounded shadow'>
+            <img src='/assets/contactchef.png' class='w- h-full object-cover' alt='contactchef' />
+        </div>
+        <div class='flex flex-col items-center w-full gap-4'>
+            <div class='w-full flex flex-col sm:flex-row items-center gap-7'>
+                <div class='flex flex-col items-start w-full gap-2'>
+                    <label for="name" class='font-Inter text-sm font-medium text-black text-opacity-75'>NAME</label>
+                    <input type='text'
+                        class='border-[#000] border p-3 rounded-xl outline-none border-opacity-[12%] w-full'
+                        placeholder='Enter your name...' />
+                </div>
+                <div class='flex flex-col items-start w-full gap-2'>
+                    <label for="name" class='font-Inter text-sm font-medium text-black text-opacity-75'>EMAIL
+                        ADDRESS</label>
+                    <input type='text'
+                        class='border-[#000] border p-3 rounded-xl outline-none border-opacity-[12%] w-full'
+                        placeholder='Your email address...' />
+                </div>
+            </div>
+            <div class='w-full flex flex-col sm:flex-row items-center gap-7'>
+                <div class='flex flex-col items-start w-full gap-2'>
+                    <label for="name" class='font-Inter text-sm font-medium text-black text-opacity-75'>SUBJECT</label>
+                    <input type='text'
+                        class='border-[#000] border p-3 rounded-xl outline-none border-opacity-[12%] w-full'
+                        placeholder='Enter subject...' />
+                </div>
+                <div class='flex flex-col items-start w-full gap-2'>
+                    <label for="ENQUIRY" class='font-Inter text-sm font-medium text-black text-opacity-75'>ENQUIRY
+                        TYPE</label>
+                    <select name="ENQUIRY" id="ENQUIRY"
+                        class='border-[#000] border p-3 rounded-xl outline-none border-opacity-[12%] w-full bg-white'>
+                        <option value="Advertising" class='w-full p-2 font-Inter bg-white text-black text-opacity-75'>
+                            Advertising</option>
+                        <option value="Advertising" class='w-full p-2 font-Inter bg-white text-black text-opacity-75'>
+                            Entertainment</option>
+                    </select>
+                </div>
+            </div>
+            <div class='flex flex-col items-start w-full gap-2'>
+                <label for="message" class='font-Inter text-sm font-medium text-black text-opacity-75'>MESSAGE</label>
+                <textarea name="message" id="message"
+                    class='min-h-[150px] border-[#000] border p-3 rounded-xl outline-none border-opacity-[12%] w-full'></textarea>
+            </div>
+            <div class='w-full flex justify-start'>
+                <button class='bg-black sm:w-auto w-1/2 p-2 sm:p-3.5 sm:px-7 rounded-lg sm:rounded shadow'>
+                    <p class='font-Inter text-xs font-medium text-center self-center text-white'>Submit</p>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section
+        class='flex flex-col sm:flex-row items-center w-[97%] mb-10 mx-auto sm:w-[90%] rounded-3xl shadow mt-[5%] bg-gradient-to-tr from-[#E7FAFE] via-purple-200 to-white justify-center relative overflow-hidden'>
+        <img src='/assets/letleft.png' class='sm:flex hidden w-1/5 sm:w-[25%] self-end' />
+        <div class='flex justify-center flex-col items-center sm:w-1/2 mx-auto w-full gap-3 sm:py-5 px-4 pt-4'>
+            <p class='font-Inter font-black text-center w-full text-2xl sm:text-4xl'>
+                Deliciouness to your inbox
+            </p>
+            <p class='font-Inter font-thin text-center w-full text-[11px] sm:leading-[2rem] sm:text-xs'>
+                Get deliciousness delivered straight to your inbox! Enjoy a handpicked selection of mouth-watering
+                recipes, cooking
+                tips, and exciting meal ideas that will inspire your cooking and make every dish a delightful
+                experience.
+            </p>
+            <div class='flex flex-row items-center w-full bg-white p-1.5 rounded-lg'>
+                <input type="text"
+                    class='bg-white w-3/5 sm:w-3/4 h-full outline-none border-none text-xs font-Inter p-2.5 self-center'
+                    placeholder='Your email address...'>
+                <button
+                    class='bg-black text-white text-center sm:w-1/4 w-2/5 font-Inter text-[11px] p-2.5 rounded-xl self-center'>Suscribe</button>
+            </div>
+        </div>
+        <img src='/assets/letright.png' class='sm:flex hidden object-cover w-1/5 sm:w-[25%] self-end' />
+        <div class='sm:hidden flex flex-row w-full justify-between'>
+            <img src='/assets/letleft.png' class='object-cover w-1/5 sm:w-[25%] self-end' />
+            <img src='/assets/letright.png' class='object-cover w-1/5 sm:w-[25%] self-end' />
+        </div>
+    </section>
+    <section class='flex flex-col items-center sm:w-[90%] mx-auto w-full'>
+        <div
+            class='flex flex-col items-start sm:items-center sm:w-[55%] w-full justify-start sm:justify-between my-7 px-2.5'>
+            <p class='font-Inter sm:text-3xl text-2xl text-center font-black w-full self-center'>
+                Check out the delicious recipe</p>
+        </div>
+        <section class='grid md:grid-cols-4 w-[97%] mx-auto my-3 md:gap-5 sm:grid-cols-2 grid-cols-1 gap-3'>
+            <div class='flex flex-col items-center w-full rounded-xl px-3 py-6 gap-3 self-stretch shadow'>
+                <div class='relative w-full min-h-[150px] max-h-[250px]'>
+                    <img src='/assets/recp1.png' class='object-cover w-full h-full rounded-3xl' alt='Menu1' />
+                    <div class='w-8 h-8 rounded-full bg-white shadow p-1 flex justify-center absolute top-3 right-2'>
+                        <i class='material-icons text-red-500 self-center'>favorite</i>
+                    </div>
+                </div>
+                <div class='flex flex-col items-start w-full gap-3 py-1.5'>
+                    <p class='font-semibold font-Inter text-start text-base w-full'>
+                        Mixed Tropical Fruit Salad with Superfood Boosts
+                    </p>
+                    <div class='flex flex-row items-center w-full gap-4'>
+                        <div class='w-auto justify-start flex flex-row gap-1'>
+                            <i class='material-icons text-sm text-start self-center'>timer</i>
+                            <p class='font-Inter text-xs font-medium self-center'>30 Minutes</p>
+                        </div>
+                        <div class='w-auto flex flex-row gap-1 justify-start'>
+                            <i class='material-icons text-sm text-start self-center'>restaurant</i>
+                            <p class='font-Inter text-xs font-medium self-center'>Health</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='flex flex-col items-center w-full rounded-xl px-3 py-6 gap-3 self-stretch shadow'>
+                <div class='relative w-full min-h-[150px] max-h-[250px]'>
+                    <img src='/assets/recp2.png' class='object-cover w-full h-full rounded-3xl' alt='Menu1' />
+                    <div class='w-8 h-8 rounded-full bg-white shadow p-1 flex justify-center absolute top-3 right-2'>
+                        <i class='material-icons text-gray-300 self-center'>favorite</i>
+                    </div>
+                </div>
+                <div class='flex flex-col items-start w-full gap-3 py-1.5'>
+                    <p class='font-semibold font-Inter text-start text-base w-full'>
+                        Big and Juicy Wagyu Beef Cheeseburger
+                    </p>
+                    <div class='flex flex-row items-center w-full gap-4'>
+                        <div class='w-auto justify-start flex flex-row gap-1'>
+                            <i class='material-icons text-sm text-start self-center'>timer</i>
+                            <p class='font-Inter text-xs font-medium self-center'>30 Minutes</p>
+                        </div>
+                        <div class='w-auto flex flex-row gap-1 justify-start'>
+                            <i class='material-icons text-sm text-start self-center'>restaurant</i>
+                            <p class='font-Inter text-xs font-medium self-center'>Western</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='flex flex-col items-center w-full rounded-xl px-3 py-6 gap-3 self-stretch shadow'>
+                <div class='relative w-full min-h-[150px] max-h-[250px]'>
+                    <img src='/assets/recp3.png' class='object-cover w-full h-full rounded-3xl' alt='Menu1' />
+                    <div class='w-8 h-8 rounded-full bg-white shadow p-1 flex justify-center absolute top-3 right-2'>
+                        <i class='material-icons text-gray-300 self-center'>favorite</i>
+                    </div>
+                </div>
+                <div class='flex flex-col items-start w-full gap-3 py-1.5'>
+                    <p class='font-semibold font-Inter text-start text-base w-full'>
+                        Healthy Japanese Fried Rice with Asparagus
+                    </p>
+                    <div class='flex flex-row items-center w-full gap-4'>
+                        <div class='w-auto justify-start flex flex-row gap-1'>
+                            <i class='material-icons text-sm text-start self-center'>timer</i>
+                            <p class='font-Inter text-xs font-medium self-center'>30 Minutes</p>
+                        </div>
+                        <div class='w-auto flex flex-row gap-1 justify-start'>
+                            <i class='material-icons text-sm text-start self-center'>restaurant</i>
+                            <p class='font-Inter text-xs font-medium self-center'>Healthy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='flex flex-col items-center w-full rounded-xl px-3 py-6 gap-3 self-stretch shadow'>
+                <div class='relative w-full min-h-[150px] max-h-[250px]'>
+                    <img src='/assets/recp4.png' class='object-cover w-full h-full rounded-3xl' alt='Menu1' />
+                    <div class='w-8 h-8 rounded-full bg-white shadow p-1 flex justify-center absolute top-3 right-2'>
+                        <i class='material-icons text-gray-300 self-center'>favorite</i>
+                    </div>
+                </div>
+                <div class='flex flex-col items-start w-full gap-3 py-1.5'>
+                    <p class='font-semibold font-Inter text-start text-base w-full'>
+                        Cauliflower Walnut Vegetarian Taco Meat
+                    </p>
+                    <div class='flex flex-row items-center w-full gap-4'>
+                        <div class='w-auto justify-start flex flex-row gap-1'>
+                            <i class='material-icons text-sm text-start self-center'>timer</i>
+                            <p class='font-Inter text-xs font-medium self-center'>30 Minutes</p>
+                        </div>
+                        <div class='w-auto flex flex-row gap-1 justify-start'>
+                            <i class='material-icons text-sm text-start self-center'>restaurant</i>
+                            <p class='font-Inter text-xs font-medium self-center'>Eastern</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <footer
+        class='flex flex-col items-center w-full mx-auto p-3 mt-5 sm:px-7 gap-3 justify-between border-[#000] border-t border-opacity-[12%]'>
+        <div class='w-full flex flex-col sm:flex-row'>
+            <div class='hidden sm:flex w-full'></div>
+            <p
+                class='font-Inter sm:text-base text-xs text-center text-black text-opacity-75 flex justify-center w-full'>
+                &copy; 2024
+                Flowbase.
+                Powered
+                by <span class='text-red-300 ml-1'>Webflow</span></p>
+            <div class='w-1/2 sm:w-2/5 flex flex-row items-center gap-1 mt-2 justify-between self-center'>
+                <i class='w-[10px] h-[20px] text-center fa'>&#xf09a;</i>
+                <i class='w-[10px] h-[20px] text-center fa'>&#xf099;</i>
+                <i class='w-[10px] h-[20px] text-center fa'>&#xf16d;</i>
+            </div>
+        </div>
+    </footer>
+    <script src='./index.js'></script>
+</body>
+
+</html>

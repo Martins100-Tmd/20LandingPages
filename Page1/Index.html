@@ -14,26 +14,45 @@
 <body>
     <header class='w-full flex justify-center'>
         <nav
-            class='flex flex-row items-center w-full py-7 border-[#000] border-b border-opacity-[12%] px-10 justify-between'>
-            <div class='flex justify-start w-full'>
-                <p class='font-medium text-lg font-Lob text-start'>Foodieland</p>
+            class='flex flex-row items-center w-full py-4 sm:py-7 border-[#000] border-b border-opacity-[12%] px-3 sm:px-10 justify-between'>
+            <div class='flex justify-start w-full self-center'>
+                <p class='font-medium text-2xl font-Lob text-start'>Foodieland</p>
             </div>
             <ul class='w-full hidden sm:flex flex-row items-center gap-3 self-center justify-between'>
-                <li class='font-Inter font-medium text-center text-sm'>Home</li>
-                <li class='font-Inter font-medium text-center text-sm'>Recipes</li>
-                <li class='font-Inter font-medium text-center text-sm'>Blog</li>
-                <li class='font-Inter font-medium text-center text-sm'>Contact</li>
-                <li class='font-Inter font-medium text-center text-sm'>About us</li>
+                <li class='font-Inter font-semibold text-start text-sm'><a href='/Index.html'>Home</a></li>
+                <li class='font-Inter font-semibold text-center text-sm'>Recipes</li>
+                <li class='font-Inter font-semibold text-start text-sm'><a href='/blog.html'>Blog</a></li>
+                <li class='font-Inter font-semibold text-center text-sm'><a href='/contact.html'>Contact</a></li>
+                <li class='font-Inter font-semibold text-center text-sm'>About us</li>
             </ul>
-            <div class='w-full flex flex-row items-center gap-10 justify-center sm:justify-end self-center'>
+            <div
+                class='w-full hidden sm:flex flex-row items-center gap-10 mt-2 justify-center sm:justify-end self-center'>
                 <i class='w-[10px] h-[20px] text-center fa'>&#xf09a;</i>
                 <i class='w-[10px] h-[20px] text-center fa'>&#xf099;</i>
                 <i class='w-[10px] h-[20px] text-center fa'>&#xf16d;</i>
             </div>
-            <div class='w-full flex justify-end sm:hidden'>
-                <i class='material-icons text-3xl self-centern'>menu</i>
+            <div class='w-full flex justify-end sm:hidden self-center' onclick='slide()'>
+                <i class='material-icons text-3xl self-center'>menu</i>
             </div>
         </nav>
+        <aside
+            class='h-screen w-3/4 absolute -left-full bg-white z-[100] duration-500 sm:hidden flex flex-col items-start gap-6'>
+            <div class='flex justify-start w-full self-center border-[#000] border-b border-opacity-[12%] p-4'>
+                <p class='font-medium text-2xl font-Lob text-start'>Foodieland</p>
+            </div>
+            <ul class='w-full flex flex-col items-center gap-3 self-center justify-between p-4'>
+                <li class='font-Inter font-semibold text-start text-lg w-full'><a href='/Index.html'>Home</a></li>
+                <li class='font-Inter font-semibold text-start text-lg w-full'>Recipes</li>
+                <li class='font-Inter font-semibold text-start text-lg w-full'><a href='/blog.html'>Blog</a></li>
+                <li class='font-Inter font-semibold text-start text-lg w-full'><a href='/contact.html'>Contact</a></li>
+                <li class='font-Inter font-semibold text-start text-lg w-full'>About us</li>
+            </ul>
+            <div class='w-full flex flex-row items-start gap-10 mt-2 justify-start self-center p-4'>
+                <i class='w-[10px] h-[20px] text-center fa'>&#xf09a;</i>
+                <i class='w-[10px] h-[20px] text-center fa'>&#xf099;</i>
+                <i class='w-[10px] h-[20px] text-center fa'>&#xf16d;</i>
+            </div>
+        </aside>
     </header>
     <section class='w-full my-8 overflow-x-scroll p-3 gap-4 sm:gap-10 flex flex-row items-center'>
         <div
@@ -46,13 +65,12 @@
                     <p class='font-Inter text-[9px] sm:text-[12px] self-start'>Hot Recipe</p>
                 </div>
                 <div class='flex flex-col items-start w-full gap-2 sm:gap-5'>
-                    <p class='font-Inter sm:text-[3rem] text-[1.7rem] sm:leading-[70px] font-black w-full'>Spicy
+                    <p class='font-Inter sm:text-[3rem] text-[1.7rem] sm:leading-[58px] font-black w-full'>Spicy
                         delicious
                         chicken wings</p>
-                    <p class='font-Inter text-[10px] sm:text-sm text-start w-full font-thin'>Lorem ipsum dolor sit amet,
-                        consectetuipisicing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqut
-                        enim ad minim</p>
+                    <p class='font-Inter text-[12px] sm:text-sm text-start w-full font-thin'>Experience the bold, fiery
+                        flavors of our spicy, delicious chicken wings! Crispy on the outside, juicy on the inside,
+                        and perfectly seasoned to deliver the ultimate taste sensation in every bite.</p>
                     <div class='grid grid-cols-2 items-center w-full sm:w-[65%] gap-4'>
                         <div
                             class='w-full p-2 rounded-3xl bg-black bg-opacity-[12%] justify-center flex flex-row gap-1.5'>
@@ -75,14 +93,14 @@
                             <p class='text-[10px] sm:text-xs text-start font-Inter'>15 March, 2022</p>
                         </div>
                     </div>
-                    <button class='bg-black p-1.5 sm:p-3 rounded-xl shadow flex flex-row items-center'>
-                        <p class='font-Inter text-white text-[10px] sm:text-xs font-medium'>View Recipes</p>
-                        <i class='material-icons text-[12px] sm:text-sm text-white'>play_circle</i>
+                    <button class='bg-black p-2.5 sm:p-3 rounded-xl shadow flex flex-row items-center'>
+                        <p class='font-Inter text-white text-[11px] sm:text-xs font-medium'>View Recipes</p>
+                        <i class='material-icons text-[13px] sm:text-sm text-white'>play_circle</i>
                     </button>
                 </div>
             </div>
             <img src='./assets/Badge.png'
-                class='absolute sm:w-[110px] sm:h-[110px] w-[45px] h-[45px] rounded-full object-cover top-[33%] sm:top-[7%] left-[45.3%]'
+                class='absolute sm:w-[110px] sm:h-[110px] w-[45px] h-[45px] rounded-full object-cover top-[28%] sm:top-[7%] left-[45.3%]'
                 alt='Badge' />
             <img src="./assets/chicken-bg.png" alt="chicken"
                 class='object-cover object-center sm:object-bottom w-full rounded-t-3xl sm:rounded-r-3xl min-h-[300px] sm:min-h-auto sm:self-stretch'>
@@ -100,10 +118,9 @@
                     <p class='font-Inter sm:text-[3rem] text-[1.7rem] sm:leading-[70px] font-black w-full'>Spicy
                         delicious
                         chicken wings</p>
-                    <p class='font-Inter text-[10px] sm:text-sm text-start w-full font-thin'>Lorem ipsum dolor sit amet,
-                        consectetuipisicing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqut
-                        enim ad minim</p>
+                    <p class='font-Inter text-[12px] sm:text-sm text-start w-full font-thin'>Experience the bold, fiery
+                        flavors of our spicy, delicious chicken wings! Crispy on the outside, juicy on the inside,
+                        and perfectly seasoned to deliver the ultimate taste sensation in every bite.</p>
                     <div class='grid grid-cols-2 items-center w-full sm:w-[65%] gap-4'>
                         <div
                             class='w-full p-2 rounded-3xl bg-black bg-opacity-[12%] justify-center flex flex-row gap-1.5'>
@@ -126,17 +143,17 @@
                             <p class='text-[10px] sm:text-xs text-start font-Inter'>15 March, 2022</p>
                         </div>
                     </div>
-                    <button class='bg-black p-1.5 sm:p-3 rounded-xl shadow flex flex-row items-center'>
-                        <p class='font-Inter text-white text-[10px] sm:text-xs font-medium'>View Recipes</p>
-                        <i class='material-icons text-[12px] sm:text-sm text-white'>play_circle</i>
+                    <button class='bg-black p-2.5 sm:p-3 rounded-xl shadow flex flex-row items-center'>
+                        <p class='font-Inter text-white text-[11px] sm:text-xs font-medium'>View Recipes</p>
+                        <i class='material-icons text-[13px] sm:text-sm text-white'>play_circle</i>
                     </button>
                 </div>
             </div>
             <img src='./assets/Badge.png'
-                class='absolute sm:w-[110px] sm:h-[110px] w-[45px] h-[45px] rounded-full object-cover top-[33%] sm:top-[7%] left-[45.3%]'
+                class='absolute sm:w-[110px] sm:h-[110px] w-[45px] h-[45px] rounded-full object-cover top-[28%] sm:top-[7%] left-[45.3%]'
                 alt='Badge' />
             <img src="./assets/chicken-bg.png" alt="chicken"
-                class='object-cover object-center sm:object-bottom w-full rounded-t-3xl sm:rounded-r-3xl min-h-[300px] sm:h-auto self-stretch'>
+                class='object-cover object-center sm:object-bottom w-full rounded-t-[30px] sm:rounded-r-3xl min-h-[300px] sm:h-auto self-stretch'>
         </div>
         <div
             class='flex flex-col-reverse sm:grid sm:grid-cols-2 items-center shadow rounded-3xl relative h-[500px] min-w-full md:min-w-[85%]'>
@@ -151,10 +168,9 @@
                     <p class='font-Inter sm:text-[3rem] text-[1.7rem] sm:leading-[70px] font-black w-full'>Spicy
                         delicious
                         chicken wings</p>
-                    <p class='font-Inter text-[10px] sm:text-sm text-start w-full font-thin'>Lorem ipsum dolor sit amet,
-                        consectetuipisicing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqut
-                        enim ad minim</p>
+                    <p class='font-Inter text-[12px] sm:text-sm text-start w-full font-thin'>Experience the bold, fiery
+                        flavors of our spicy, delicious chicken wings! Crispy on the outside, juicy on the inside,
+                        and perfectly seasoned to deliver the ultimate taste sensation in every bite.</p>
                     <div class='grid grid-cols-2 items-center w-full sm:w-[65%] gap-4'>
                         <div
                             class='w-full p-2 rounded-3xl bg-black bg-opacity-[12%] justify-center flex flex-row gap-1.5'>
@@ -177,23 +193,23 @@
                             <p class='text-[10px] sm:text-xs text-start font-Inter'>15 March, 2022</p>
                         </div>
                     </div>
-                    <button class='bg-black p-1.5 sm:p-3 rounded-xl shadow flex flex-row items-center'>
-                        <p class='font-Inter text-white text-[10px] sm:text-xs font-medium'>View Recipes</p>
-                        <i class='material-icons text-[12px] sm:text-sm text-white'>play_circle</i>
+                    <button class='bg-black p-2.5 sm:p-3 rounded-xl shadow flex flex-row items-center'>
+                        <p class='font-Inter text-white text-[11px] sm:text-xs font-medium'>View Recipes</p>
+                        <i class='material-icons text-[13px] sm:text-sm text-white'>play_circle</i>
                     </button>
                 </div>
             </div>
             <img src='./assets/Badge.png'
-                class='absolute sm:w-[110px] sm:h-[110px] w-[45px] h-[45px] rounded-full object-cover top-[33%] sm:top-[7%] left-[45.3%]'
+                class='absolute sm:w-[110px] sm:h-[110px] w-[45px] h-[45px] rounded-full object-cover top-[28%] sm:top-[7%] left-[45.3%]'
                 alt='Badge' />
             <img src="./assets/chicken-bg.png" alt="chicken"
-                class='object-cover object-center sm:object-bottom w-full rounded-t-3xl sm:rounded-r-3xl min-h-[300px] sm:h-auto self-stretch'>
+                class='object-cover object-center sm:object-bottom w-full rounded-t-[30px] sm:rounded-r-3xl min-h-[300px] sm:h-auto self-stretch'>
         </div>
     </section>
     <section class='w-[90%] mx-auto flex flex-col gap-7 pb-3 md:pb-6 mt-10 md:mt-20'>
         <div class='flex flex-row items-center w-full justify-between'>
             <p class='font-Inter text-xl sm:text-4xl font-black text-start'>Category</p>
-            <button class='bg-[#E7FAFE] p-2 sm:p-3.5 rounded flex justify-center shadow'>
+            <button class='bg-[#E7FAFE] p-2 sm:p-3.5 rounded-lg sm:rounded flex justify-center shadow'>
                 <p class='font-Inter text-xs font-medium text-center self-center'>View all categories</p>
             </button>
         </div>
@@ -202,52 +218,54 @@
                 class='flex flex-col items-center w-full justify-between gap-7 pb-3 md:pb-6 rounded-b-[36px] bg-gradient-to-t from-[#f3f3f3] via-[#fff9f9] to-white'>
                 <img src='/assets/breakfast.png' class='object-cover w-[50px] sm:w-[80px] h-[50px] sm:h-[80px] mx-auto'
                     alt='breakfast' />
-                <p class='text-base font-Inter text-center w-full'>breakfast</p>
+                <p class='text-xs sm:text-base font-semibold font-Inter text-center w-full'>breakfast</p>
             </div>
             <div
                 class='flex flex-col items-center w-full justify-between gap-7 pb-3 md:pb-6 rounded-b-[36px] bg-gradient-to-t from-[#f3f3f3] via-[#fff9f9] to-white'>
                 <img src='/assets/vegan.png' class='object-cover w-[50px] sm:w-[80px] h-[50px] sm:h-[80px] mx-auto'
                     alt='breakfast' />
-                <p class='text-base font-Inter text-center w-full'>vegan</p>
+                <p class='text-xs sm:text-base font-semibold font-Inter text-center w-full'>vegan</p>
             </div>
             <div
                 class='flex flex-col items-center w-full justify-between gap-7 pb-3 md:pb-6 rounded-b-[36px] bg-gradient-to-t from-[#ffd5d3] via-[#fff6f6] to-white'>
                 <img src='/assets/meat.png' class='object-cover w-[50px] sm:w-[80px] h-[50px] sm:h-[80px] mx-auto'
                     alt='breakfast' />
-                <p class='text-base font-Inter text-center w-full'>meat</p>
+                <p class='text-xs sm:text-base font-semibold font-Inter text-center w-full'>meat</p>
             </div>
             <div
                 class='flex flex-col items-center w-full justify-between gap-7 pb-3 md:pb-6 rounded-b-[36px] bg-gradient-to-t from-[#fff7d5] via-[#fffdf6] to-white'>
                 <img src='/assets/dessert.png' class='object-cover w-[50px] sm:w-[80px] h-[50px] sm:h-[80px] mx-auto'
                     alt='breakfast' />
-                <p class='text-base font-Inter text-center w-full'>dessert</p>
+                <p class='text-xs sm:text-base font-semibold font-Inter text-center w-full'>dessert</p>
             </div>
             <div
                 class='flex flex-col items-center w-full justify-between gap-7 pb-3 md:pb-6 rounded-b-[36px] bg-gradient-to-t from-[#f3f3f3] via-[#fff9f9] to-white'>
                 <img src='/assets/lunch.png' class='object-cover w-[50px] sm:w-[80px] h-[50px] sm:h-[80px] mx-auto'
                     alt='breakfast' />
-                <p class='text-base font-Inter text-center w-full'>lunch</p>
+                <p class='text-xs sm:text-base font-semibold font-Inter text-center w-full'>lunch</p>
             </div>
             <div
                 class='flex flex-col items-center w-full justify-between gap-7 pb-3 md:pb-6 rounded-b-[36px] bg-gradient-to-t from-[#f3f3f3] via-[#fff9f9] to-white'>
                 <img src='/assets/chocolate.png' class='object-cover w-[50px] sm:w-[80px] h-[50px] sm:h-[80px] mx-auto'
                     alt='breakfast' />
-                <p class='text-base font-Inter text-center w-full'>chocolate</p>
+                <p class='text-xs sm:text-base font-semibold font-Inter text-center w-full'>chocolate</p>
             </div>
         </div>
     </section>
     <section class='w-full sm:w-[90%] mx-auto flex flex-col items-center my-6 md:my-14'>
         <section class='flex flex-col items-center w-full sm:w-[55%] mx-auto'>
             <p class='font-Inter sm:text-5xl text-2xl text-center font-semibold w-full'>Simple and tasty recipes</p>
-            <p class='font-Inter text-[11px] sm:text-[13.5px] text-center font-thin w-full'>
-                Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqut
-                enim ad minim
+            <p class='font-Inter text-[11px] leading-[1.55rem] sm:text-[13.5px] text-center font-thin w-full'>
+                Discover simple and tasty recipes that make cooking easy and enjoyable! With minimal ingredients and
+                straightforward
+                steps, these dishes bring delicious flavors to your table in no time—perfect for busy days or quick,
+                satisfying meals
+                anytime.
             </p>
         </section>
-        <section class='grid grid-cols-1 sm:grid-cols-2 w-full md:grid-cols-3 gap-4 sm:gap-10 p-5'>
+        <section class='grid md:grid-cols-4 w-[95%] mx-auto my-3 md:gap-5 sm:grid-cols-2 grid-cols-1 gap-3'>
             <div
-                class='flex flex-col items-center w-full rounded-xl bg-gradient-to-t from-[#E7FAFE] to-white px-3 py-6 gap-3 self-stretch'>
+                class='flex flex-col items-center w-full rounded-xl bg-gradient-to-t from-[#E7FAFE] via-purple-100 shadow to-white px-3 py-6 gap-3 self-stretch'>
                 <div class='relative w-full min-h-[150px] max-h-[250px]'>
                     <img src='/assets/Menu1.png' class='object-cover w-full h-full rounded-3xl' alt='Menu1' />
                     <div class='w-8 h-8 rounded-full bg-white shadow p-1 flex justify-center absolute top-3 right-2'>
@@ -271,7 +289,7 @@
                 </div>
             </div>
             <div
-                class='flex flex-col items-center w-full rounded-xl bg-gradient-to-t from-[#E7FAFE] to-white px-3 py-6 gap-3 self-stretch'>
+                class='flex flex-col items-center w-full rounded-xl bg-gradient-to-t from-[#E7FAFE] via-purple-100 shadow to-white px-3 py-6 gap-3 self-stretch'>
                 <div class='relative w-full min-h-[150px] max-h-[250px]'>
                     <img src='/assets/Menu2.png' class='object-cover w-full h-full rounded-3xl' alt='Menu1' />
                     <div class='w-8 h-8 rounded-full bg-white shadow p-1 flex justify-center absolute top-3 right-2'>
@@ -295,7 +313,7 @@
                 </div>
             </div>
             <div
-                class='flex flex-col items-center w-full rounded-xl bg-gradient-to-t from-[#E7FAFE] to-white px-3 py-6 gap-3 self-stretch'>
+                class='flex flex-col items-center w-full rounded-xl bg-gradient-to-t from-[#E7FAFE] via-purple-100 shadow to-white px-3 py-6 gap-3 self-stretch'>
                 <div class='relative w-full min-h-[150px] max-h-[250px]'>
                     <img src='/assets/Menu3.png' class='object-cover w-full h-full rounded-3xl' alt='Menu1' />
                     <div class='w-8 h-8 rounded-full bg-white shadow p-1 flex justify-center absolute top-3 right-2'>
@@ -319,7 +337,7 @@
                 </div>
             </div>
             <div
-                class='flex flex-col items-center w-full rounded-xl bg-gradient-to-t from-[#E7FAFE] to-white px-3 py-6 gap-3 self-stretch'>
+                class='flex flex-col items-center w-full rounded-xl bg-gradient-to-t from-[#E7FAFE] via-purple-100 shadow to-white px-3 py-6 gap-3 self-stretch'>
                 <div class='relative w-full min-h-[150px] max-h-[250px]'>
                     <img src='/assets/Menu4.png' class='object-cover w-full h-full rounded-3xl' alt='Menu1' />
                     <div class='w-8 h-8 rounded-full bg-white shadow p-1 flex justify-center absolute top-3 right-2'>
@@ -343,7 +361,7 @@
                 </div>
             </div>
             <div
-                class='flex flex-col items-center w-full rounded-xl bg-gradient-to-t from-[#E7FAFE] to-white px-3 py-6 gap-3 self-stretch'>
+                class='flex flex-col items-center w-full rounded-xl bg-gradient-to-t from-[#E7FAFE] via-purple-100 shadow to-white px-3 py-6 gap-3 self-stretch'>
                 <div class='relative w-full min-h-[150px] max-h-[250px]'>
                     <img src='/assets/Menu6.png' class='object-cover w-full h-full rounded-3xl' alt='Menu1' />
                     <div class='w-8 h-8 rounded-full bg-white shadow p-1 flex justify-center absolute top-3 right-2'>
@@ -366,17 +384,8 @@
                     </div>
                 </div>
             </div>
-            <div class='flex flex-col items-center w-full relative'>
-                <img src='/assets/Menu5.png' class='object-cover w-full h-full rounded absolute inset-0 z-10'
-                    alt='Menu1' />
-                <div class='absolute w-full h-full z-30 flex flex-col items-center justify-between px-3 py-5'>
-                    <p class='font-Lob text-white text-center w-full'>Don't forget to eat <br /> healthy food</p>
-                    <img src='/assets/greendish.png' class='object-cover w-3/5 mx-auto' alt='greendish' />
-                    <p class='font-Inter text-center w-full text-xs text-opacity-80 text-white'>www.foodieland.com</p>
-                </div>
-            </div>
             <div
-                class='flex flex-col items-center w-full rounded-xl bg-gradient-to-t from-[#E7FAFE] to-white px-3 py-6 gap-3 self-stretch'>
+                class='flex flex-col items-center w-full rounded-xl bg-gradient-to-t from-[#E7FAFE] via-purple-100 shadow to-white px-3 py-6 gap-3 self-stretch'>
                 <div class='relative w-full min-h-[150px] max-h-[250px]'>
                     <img src='/assets/Menu6.png' class='object-cover w-full h-full rounded-3xl' alt='Menu1' />
                     <div class='w-8 h-8 rounded-full bg-white shadow p-1 flex justify-center absolute top-3 right-2'>
@@ -400,7 +409,7 @@
                 </div>
             </div>
             <div
-                class='flex flex-col items-center w-full rounded-xl bg-gradient-to-t from-[#E7FAFE] to-white px-3 py-6 gap-3 self-stretch'>
+                class='flex flex-col items-center w-full rounded-xl bg-gradient-to-t from-[#E7FAFE] via-purple-100 shadow to-white px-3 py-6 gap-3 self-stretch'>
                 <div class='relative w-full min-h-[150px] max-h-[250px]'>
                     <img src='/assets/Menu7.png' class='object-cover w-full h-full rounded-3xl' alt='Menu1' />
                     <div class='w-8 h-8 rounded-full bg-white shadow p-1 flex justify-center absolute top-3 right-2'>
@@ -424,7 +433,7 @@
                 </div>
             </div>
             <div
-                class='flex flex-col items-center w-full rounded-xl bg-gradient-to-t from-[#E7FAFE] to-white px-3 py-6 gap-3 self-stretch'>
+                class='flex flex-col items-center w-full rounded-xl bg-gradient-to-t from-[#E7FAFE] via-purple-100 shadow to-white px-3 py-6 gap-3 self-stretch'>
                 <div class='relative w-full min-h-[150px] max-h-[250px]'>
                     <img src='/assets/Menu8.png' class='object-cover w-full h-full rounded-3xl' alt='Menu1' />
                     <div class='w-8 h-8 rounded-full bg-white shadow p-1 flex justify-center absolute top-3 right-2'>
@@ -451,27 +460,33 @@
     </section>
     <section class='sm:w-[90%] mx-auto flex flex-col-reverse sm:flex-row items-center justify-between w-full p-3'>
         <div class='flex flex-col items-start sm:gap-6 gap-2 w-full self-center'>
-            <p class='font-Inter font-black text-start w-full text-2xl sm:text-5xl'>
+            <p class='font-Inter font-black sm:text-start text-center w-full text-2xl sm:text-5xl'>
                 Everyone can be chef in their own kitchen
             </p>
-            <p class='font-Inter text-xs text-start w-full sm:my-3'>
-                Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqut
-                enim ad minim
+            <p class='font-Inter text-xs sm:text-start text-center w-full sm:my-3 leading-[1.51rem]'>
+                Everyone can be a chef in their own kitchen with easy-to-follow recipes and helpful tips! Unleash your
+                creativity,
+                explore new flavors, and transform everyday ingredients into delicious meals that bring joy and
+                confidence to your
+                cooking.
             </p>
-            <button class='bg-black px-6 py-3 rounded shadow text-white font-Inter text-xs'>Learn More</button>
+            <div class='flex sm:justify-start justify-center w-full'>
+                <button class='bg-black sm:w-auto w-1/2 px-6 py-3 rounded-lg shadow text-white font-Inter text-xs'>Learn
+                    More</button>
+            </div>
         </div>
         <img src='/assets/Chef.png' class='w-full object-cover self-start' alt='chef' />
     </section>
     <section
-        class='w-full bg-gradient-to-t from-[#E7FAFE] to-white px-3 py-10 gap-7 mx-auto flex flex-col items-center justify-center sm:my-10'>
+        class='w-full bg-gradient-to-t from-[#E7FAFE] via-purple-200 to-white px-3 py-10 gap-7 mx-auto flex flex-col items-center justify-center sm:my-10'>
         <section class='flex flex-col items-center w-full sm:w-[65%] mx-auto gap-4'>
             <p class='font-Inter sm:text-4xl text-2xl text-center font-black w-full'>Check out @foodieland on
                 Instagram</p>
-            <p class='font-Inter text-[11px] sm:text-[12px] text-center font-thin w-full text-black text-opacity-75'>
-                Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore<br /> magna aliqut
-                enim ad minim
+            <p
+                class='font-Inter text-[11px] sm:text-[12px] leading-[1.52rem] text-center font-thin w-full text-black text-opacity-75'>
+                Discover daily inspiration with delicious recipes, expert cooking tips, and beautiful food photography
+                to spark your
+                culinary creativity and make <br class='sm:flex hidden' />every meal a delight in your kitchen!
             </p>
         </section>
         <section class='w-full sm:w-[90%] grid md:grid-cols-4 sm:gap-7 gap-3 mt-5'>
@@ -488,19 +503,22 @@
         </section>
     </section>
     <section class='flex flex-col items-center sm:w-[90%] mx-auto w-full'>
-        <div class='flex flex-row items-start sm:items-center w-full justify-start sm:justify-between my-7'>
-            <p class='font-Inter sm:text-4xl text-2xl text-start font-black w-[45%] self-center'>Try this delicious
+        <div
+            class='flex flex-col items-start sm:items-center sm:w-[55%] w-full justify-start sm:justify-between my-7 px-2.5'>
+            <p class='font-Inter sm:text-4xl text-2xl text-center font-black w-full self-center'>
+                Try this
+                delicious
                 recipe to make
                 your day</p>
             <p
-                class='font-Inter text-[11px] sm:text-[12px] text-start font-thin w-[45%] self-start text-black text-opacity-75'>
-                Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqut
-                enim ad minim
+                class='font-Inter text-[11px] sm:text-[12px] text-center font-thin w-full self-start text-black text-opacity-75'>
+                Make your day even better with this delicious recipe! Enjoy flavorful ingredients, simple preparation,
+                and a satisfying
+                meal that will lift your spirits and leave you craving more.
             </p>
         </div>
-        <section class='grid md:grid-cols-4 w-full md:gap-5 sm:grid-cols-2 grid-cols-1 gap-3'>
-            <div class='flex flex-col items-center w-full rounded-xl px-3 py-6 gap-3 self-stretch'>
+        <section class='grid md:grid-cols-4 w-[97%] mx-auto my-3 md:gap-5 sm:grid-cols-2 grid-cols-1 gap-3'>
+            <div class='flex flex-col items-center w-full rounded-xl px-3 py-6 gap-3 self-stretch shadow'>
                 <div class='relative w-full min-h-[150px] max-h-[250px]'>
                     <img src='/assets/recp1.png' class='object-cover w-full h-full rounded-3xl' alt='Menu1' />
                     <div class='w-8 h-8 rounded-full bg-white shadow p-1 flex justify-center absolute top-3 right-2'>
@@ -523,7 +541,7 @@
                     </div>
                 </div>
             </div>
-            <div class='flex flex-col items-center w-full rounded-xl px-3 py-6 gap-3 self-stretch'>
+            <div class='flex flex-col items-center w-full rounded-xl px-3 py-6 gap-3 self-stretch shadow'>
                 <div class='relative w-full min-h-[150px] max-h-[250px]'>
                     <img src='/assets/recp2.png' class='object-cover w-full h-full rounded-3xl' alt='Menu1' />
                     <div class='w-8 h-8 rounded-full bg-white shadow p-1 flex justify-center absolute top-3 right-2'>
@@ -546,7 +564,7 @@
                     </div>
                 </div>
             </div>
-            <div class='flex flex-col items-center w-full rounded-xl px-3 py-6 gap-3 self-stretch'>
+            <div class='flex flex-col items-center w-full rounded-xl px-3 py-6 gap-3 self-stretch shadow'>
                 <div class='relative w-full min-h-[150px] max-h-[250px]'>
                     <img src='/assets/recp3.png' class='object-cover w-full h-full rounded-3xl' alt='Menu1' />
                     <div class='w-8 h-8 rounded-full bg-white shadow p-1 flex justify-center absolute top-3 right-2'>
@@ -569,7 +587,7 @@
                     </div>
                 </div>
             </div>
-            <div class='flex flex-col items-center w-full rounded-xl px-3 py-6 gap-3 self-stretch'>
+            <div class='flex flex-col items-center w-full rounded-xl px-3 py-6 gap-3 self-stretch shadow'>
                 <div class='relative w-full min-h-[150px] max-h-[250px]'>
                     <img src='/assets/recp4.png' class='object-cover w-full h-full rounded-3xl' alt='Menu1' />
                     <div class='w-8 h-8 rounded-full bg-white shadow p-1 flex justify-center absolute top-3 right-2'>
@@ -592,7 +610,7 @@
                     </div>
                 </div>
             </div>
-            <div class='flex flex-col items-center w-full rounded-xl px-3 py-6 gap-3 self-stretch'>
+            <div class='flex flex-col items-center w-full rounded-xl px-3 py-6 gap-3 self-stretch shadow'>
                 <div class='relative w-full min-h-[150px] max-h-[250px]'>
                     <img src='/assets/recp5.png' class='object-cover w-full h-full rounded-3xl' alt='Menu1' />
                     <div class='w-8 h-8 rounded-full bg-white shadow p-1 flex justify-center absolute top-3 right-2'>
@@ -615,7 +633,7 @@
                     </div>
                 </div>
             </div>
-            <div class='flex flex-col items-center w-full rounded-xl px-3 py-6 gap-3 self-stretch'>
+            <div class='flex flex-col items-center w-full rounded-xl px-3 py-6 gap-3 self-stretch shadow'>
                 <div class='relative w-full min-h-[150px] max-h-[250px]'>
                     <img src='/assets/recp6.png' class='object-cover w-full h-full rounded-3xl' alt='Menu1' />
                     <div class='w-8 h-8 rounded-full bg-white shadow p-1 flex justify-center absolute top-3 right-2'>
@@ -638,7 +656,7 @@
                     </div>
                 </div>
             </div>
-            <div class='flex flex-col items-center w-full rounded-xl px-3 py-6 gap-3 self-stretch'>
+            <div class='flex flex-col items-center w-full rounded-xl px-3 py-6 gap-3 self-stretch shadow'>
                 <div class='relative w-full min-h-[150px] max-h-[250px]'>
                     <img src='/assets/recp7.png' class='object-cover w-full h-full rounded-3xl' alt='Menu1' />
                     <div class='w-8 h-8 rounded-full bg-white shadow p-1 flex justify-center absolute top-3 right-2'>
@@ -661,7 +679,7 @@
                     </div>
                 </div>
             </div>
-            <div class='flex flex-col items-center w-full rounded-xl px-3 py-6 gap-3 self-stretch'>
+            <div class='flex flex-col items-center w-full rounded-xl px-3 py-6 gap-3 self-stretch shadow'>
                 <div class='relative w-full min-h-[150px] max-h-[250px]'>
                     <img src='/assets/recp8.png' class='object-cover w-full h-full rounded-3xl' alt='Menu1' />
                     <div class='w-8 h-8 rounded-full bg-white shadow p-1 flex justify-center absolute top-3 right-2'>
@@ -686,6 +704,51 @@
             </div>
         </section>
     </section>
+    <section
+        class='flex flex-col sm:flex-row items-center w-[97%] mb-10 mx-auto sm:w-[90%] rounded-3xl shadow bg-gradient-to-tr from-[#E7FAFE] via-purple-200 to-white justify-center relative overflow-hidden'>
+        <img src='/assets/letleft.png' class='sm:flex hidden w-1/5 sm:w-[25%] self-end' />
+        <div class='flex justify-center flex-col items-center sm:w-1/2 mx-auto w-full gap-3 sm:py-5 px-4 pt-4'>
+            <p class='font-Inter font-black text-center w-full text-2xl sm:text-4xl'>
+                Deliciouness to your inbox
+            </p>
+            <p class='font-Inter font-thin text-center w-full text-[11px] sm:leading-[2rem] sm:text-xs'>
+                Get deliciousness delivered straight to your inbox! Enjoy a handpicked selection of mouth-watering
+                recipes, cooking
+                tips, and exciting meal ideas that will inspire your cooking and make every dish a delightful
+                experience.
+            </p>
+            <div class='flex flex-row items-center w-full bg-white p-1.5 rounded-lg'>
+                <input type="text"
+                    class='bg-white w-3/5 sm:w-3/4 h-full outline-none border-none text-xs font-Inter p-2.5 self-center'
+                    placeholder='Your email address...'>
+                <button
+                    class='bg-black text-white text-center sm:w-1/4 w-2/5 font-Inter text-[11px] p-2.5 rounded-xl self-center'>Suscribe</button>
+            </div>
+        </div>
+        <img src='/assets/letright.png' class='sm:flex hidden object-cover w-1/5 sm:w-[25%] self-end' />
+        <div class='sm:hidden flex flex-row w-full justify-between'>
+            <img src='/assets/letleft.png' class='object-cover w-1/5 sm:w-[25%] self-end' />
+            <img src='/assets/letright.png' class='object-cover w-1/5 sm:w-[25%] self-end' />
+        </div>
+    </section>
+    <footer
+        class='flex flex-col items-center w-full mx-auto p-3 mt-5 sm:px-7 gap-3 justify-between border-[#000] border-t border-opacity-[12%]'>
+        <div class='w-full flex flex-col sm:flex-row'>
+            <div class='hidden sm:flex w-full'></div>
+            <p
+                class='font-Inter sm:text-base text-xs text-center text-black text-opacity-75 flex justify-center w-full'>
+                &copy; 2024
+                Flowbase.
+                Powered
+                by <span class='text-red-300 ml-1'>Webflow</span></p>
+            <div class='w-1/2 sm:w-2/5 flex flex-row items-center gap-1 mt-2 justify-between self-center'>
+                <i class='w-[10px] h-[20px] text-center fa'>&#xf09a;</i>
+                <i class='w-[10px] h-[20px] text-center fa'>&#xf099;</i>
+                <i class='w-[10px] h-[20px] text-center fa'>&#xf16d;</i>
+            </div>
+        </div>
+    </footer>
+    <script src='./index.js'></script>
 </body>
 
 </html>
