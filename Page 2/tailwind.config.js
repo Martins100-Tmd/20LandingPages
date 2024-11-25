@@ -5,6 +5,7 @@ module.exports = {
       extend: {
          fontFamily: {
             monAt: ['Montserrat Alternates'],
+            inter: ['Inter'],
          },
       },
    },
