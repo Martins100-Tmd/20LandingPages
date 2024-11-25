@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:ital,wght@0,100..900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel='stylesheet' href='./output.css' />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+
+<body class='relative'>
+    <img src="./bg.webp" alt="background-image" class='absolute w-screen h-[2000px] z-10 object-cover object-left'>
+    <div class='absolute z-40 sm:w-2/5 w-[90%] left-[15%] top-2 grid grid-cols-2 items-center mt-5 scale-75 gap-16'>
+        <div
+            class='flex flex-col items-start w-[115%] bg-black/50 backdrop-blur-md min-h-full rounded-3xl border border-white/25 p-4'>
+            <section class='flex flex-row items-center w-full gap-2 scale-95'>
+                <i class='text-6xl text-rose-600 fa self-center'>&#xf1bc;</i>
+                <p class='font-bold text-4xl self-center text text-rose-600 text-clip font-mont'>Spotify</p>
+            </section>
+            <section class='flex flex-col items-start w-full gap-4 mt-3'>
+                <p class='font-mont text-base font-medium text-white text-start w-full'>MENU</p>
+                <div class='flex flex-col items-start w-full gap-2'>
+                    <div
+                        class='flex flex-row items-start justify-start gap-3 hover:bg-white/40 rounded-xl cursor-pointer w-full p-2'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-house self-center text-white text-sm">
+                            <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+                            <path
+                                d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                        </svg>
+                        <p class='font-inter text-base text-white/90 self-center'>Home</p>
+                    </div>
+                    <div
+                        class='flex flex-row items-start justify-start gap-3 hover:bg-white/30 rounded-xl cursor-pointer w-full p-2'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-search self-center text-white text-sm">
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="m21 21-4.3-4.3" />
+                        </svg>
+                        <p class='font-inter text-base text-white/90 self-center'>Search</p>
+                    </div>
+                    <div
+                        class='flex flex-row items-start justify-start gap-3 hover:bg-white/30 rounded-xl cursor-pointer w-full p-2'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-folder-closed self-center text-white/90 text-sm">
+                            <path
+                                d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z" />
+                            <path d="M2 10h20" />
+                        </svg>
+                        <p class='font-inter text-base text-white/90 self-center'>Library</p>
+                    </div>
+                    <div
+                        class='w-full flex flex-row items-center justify-between gap-2 hover:bg-white/30 rounded-xl cursor-pointer p-2'>
+                        <div class='flex flex-row items-start justify-start gap-3'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-monitor-smartphone text-sm text-white/90 self-center">
+                                <path d="M18 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8" />
+                                <path d="M10 19v-3.96 3.15" />
+                                <path d="M7 19h5" />
+                                <rect width="6" height="10" x="16" y="12" rx="2" />
+                            </svg>
+                            <p class='font-inter text-base text-white/90 self-center'>Devices</p>
+                        </div>
+                        <p
+                            class='font-inter rounded-lg self-center text-white bg-rose-600 py-1 px-3 justify-end text-end text-xs font-semibold'>
+                            2 devices
+                        </p>
+                    </div>
+                    <div
+                        class='hover:bg-white/30 rounded-xl cursor-pointer w-full p-2 flex flex-row items-center justify-between gap-2'>
+                        <div class='flex flex-row items-start justify-start gap-3'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-bell text-white/90 text-sm self-center">
+                                <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
+                                <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
+                            </svg>
+                            <p class='font-inter text-lg text-white/90 self-center'>notification</p>
+                        </div>
+                        <p
+                            class='font-inter rounded-lg self-center text-white bg-rose-600 py-1 px-3 justify-end text-end text-xs font-semibold'>
+                            7 new
+                        </p>
+                    </div>
+                    <div
+                        class='hover:bg-white/30 rounded-xl cursor-pointer w-full p-2 flex flex-row items-center gap-2'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-settings text-sm text-white/90 self-center">
+                            <path
+                                d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" />
+                            <circle cx="12" cy="12" r="3" />
+                        </svg>
+                        <p class='font-inter text-lg self-center text-white/90'>settings</p>
+                    </div>
+                </div>
+            </section>
+            <section class='flex justify-center w-full flex-col mt-4'>
+                <img src="/too.webp" alt="playlist" class='rounded-2xl shadow object-cover w-[45%] my-auto mx-auto'>
+                <div class='flex flex-col items-center w-full justify-center 1rem'>
+                    <p class='1em font-inter text-center w-full font-semibold text-sm text-rose-100'>Too Late</p>
+                    <div class='flex flex-row items-center gap-1'>
+                        <div class='flex justify-center px-1 rounded bg-white shadow'>
+                            <span class='font-inter text-[10px] text-black font-semibold self-center'>E</span>
+                        </div>
+                        <p class='text-xs self-center text-white/90 font-inter'>The weeknd</p>
+                    </div>
+                    <div class='flex flex-row items-center w-3/5 mx-auto justify-between my-7'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-skip-back text-white/90 self-center text-xl">
+                            <polygon points="19 20 9 12 19 4 19 20" />
+                            <line x1="5" x2="5" y1="19" y2="5" />
+                        </svg>
+                        <div class='flex justify-center w-[40px] h-[40px] rounded-full shadow bg-white'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-pause self-center text-lg">
+                                <rect x="14" y="4" width="4" height="16" rx="1" />
+                                <rect x="6" y="4" width="4" height="16" rx="1" />
+                            </svg>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-skip-forward self-center text-white/90 text-xl">
+                            <polygon points="5 4 15 12 5 20 5 4" />
+                            <line x1="19" x2="19" y1="5" y2="19" />
+                        </svg>
+                    </div>
+                    <div class='w-[90%] bg-rose-200 rounded h-[2px] mx-auto'></div>
+                    <div class='flex flex-row items-center w-[80%] mx-auto justify-between mt-5'>
+                        <div class='flex flex-row items-center gap-3'>
+                            <img src='/B015.jpg'
+                                class='object-cover w-[3rem] h-[3rem] border border-rose-400 rounded-full shadow self-start' />
+                            <div class='flex flex-col items-start gap-1 self-start'>
+                                <p class='font-inter font-semibold text-lg text-start text-white'>Yemi</p>
+                                <p class='font-inter font-medium text-xs text-start text-white'>Premium user</p>
+                            </div>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-chevron-down text-white/90 self-start text-sm">
+                            <path d="m6 9 6 6 6-6" />
+                        </svg>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div
+            class='flex flex-col items-start w-[35%] self-stretch bg-black/50 backdrop-blur-md min-h-full rounded-3xl border border-white/25 p-2'>
+            <div class='flex justify-center w-full self-start'>
+                <i class='text-6xl text-rose-600 fa self-center'>&#xf1bc;</i>
+            </div>
+
+            <div class='flex flex-col items-center w-full justify-start self-start h-3/4 gap-6 mt-[4rem]'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-house self-center text-white/90">
+                    <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+                    <path
+                        d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-search self-center text-white text-sm">
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="m21 21-4.3-4.3" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-folder-closed self-center text-white/90">
+                    <path
+                        d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z" />
+                    <path d="M2 10h20" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-monitor-smartphone text-white/90 self-center">
+                    <path d="M18 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8" />
+                    <path d="M10 19v-3.96 3.15" />
+                    <path d="M7 19h5" />
+                    <rect width="6" height="10" x="16" y="12" rx="2" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-bell text-white/90 self-center">
+                    <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
+                    <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-settings text-white/90 self-center">
+                    <path
+                        d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" />
+                    <circle cx="12" cy="12" r="3" />
+                </svg>
+            </div>
+
+            <div class='flex flex-col justify-center w-[90%] mx-auto self-end gap-5'>
+                <div class='w-[90%] bg-rose-200 rounded h-[1px] mx-auto'></div>
+                <img src='/B015.jpg'
+                    class='object-cover w-[3.5rem] h-[3.5rem] border border-rose-400 rounded-full shadow self-start mx-auto' />
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
