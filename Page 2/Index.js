@@ -9,6 +9,7 @@ gsap.from('.bone', { x: -250, duration: 1.2 });
 gsap.from('.paw', { scale: 0.5, duration: 1 });
 gsap.from('.best', { x: 50, duration: 1.5 });
 gsap.from('.dog', { y: -100, rotate: 270, duration: 2 });
+gsap.from('.upimg', { y: -100, rotate: 270, duration: 2 });
 
 function SAP() {
    gsap.from('.home', { x: 250, duration: 1.8 });
