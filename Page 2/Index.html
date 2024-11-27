@@ -11,6 +11,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone@7.10.3/babel.min.js" crossorigin></script>
     <style>
         ::-webkit-scrollbar {
             width: 0;
@@ -74,7 +77,7 @@
     <!-- Hero Section -->
     <section class='flex flex-col items-center w-[98%] sm:w-[85%] mx-auto px-1 pt-3 pb-10'>
         <section class='flex sm:flex-row flex-col items-center w-full mx-auto justify-between mt-3 sm:mt-10'>
-            <div class='flex flex-row items-end sm:items-center self-end sm:self-start'>
+            <div class='flex flex-row items-end sm:items-center self-end sm:self-start bone'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     class="lucide lucide-snowflake text-orange-600/70 self-start">
@@ -89,12 +92,13 @@
                 </svg>
             </div>
             <div class='flex justify-center w-full sm:w-[90%] self-center mx-auto'>
-                <p class='self-center font-monAt font-black text-3xl sm:text-5xl text-center leading-[3.5rem] w-full'>
+                <p
+                    class='best self-center font-monAt font-black text-3xl sm:text-5xl text-center leading-[3.5rem] w-full'>
                     The best place to get your<br class='sm:flex hidden' /> favourite pet without <br
                         class='sm:flex hidden' />any doubt
                 </p>
             </div>
-            <div class='flex flex-row items-center self-start'>
+            <div class='flex flex-row items-center self-start paw'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     class="lucide lucide-paw-print -mb-2 -rotate-45">
@@ -116,7 +120,7 @@
             </div>
         </section>
         <section class='flex sm:flex-row items-center w-full justify-between sm:mt-6 heroII'>
-            <div class='flex justify-center w-[20%] sm:w-1/4 self-center rotate-[54deg]'>
+            <div class='dog flex justify-center w-[20%] sm:w-1/4 self-center rotate-[54deg]'>
                 <img src='white.jpg' class='object-cover w-[100%] sm:w-[18%] p-1 shadow-xl rounded-xl'
                     alt='white dog' />
             </div>
@@ -132,7 +136,7 @@
                     </div>
                 </button>
             </div>
-            <div class='flex justify-center w-[20%] sm:w-1/4 self-center rotate-[54deg]'>
+            <div class='dog flex justify-center w-[20%] sm:w-1/4 self-center rotate-[54deg]'>
                 <img src='white.jpg' class='object-cover w-[100%] sm:w-[18%] p-1 shadow-xl rounded-xl'
                     alt='white dog' />
             </div>
@@ -167,7 +171,7 @@
             </p>
             <div class='w-full grid grid-cols-2 sm:flex sm:flex-row items-center justify-between gap-2 sm:gap-4 mt-7'>
                 <div
-                    class='flex flex-col items-center rounded-xl self-stretch w-full shadow p-4 bg-white/80 gap-2 sm:gap-5'>
+                    class='flex flex-col items-center rounded-lg self-stretch w-full shadow p-4 bg-white/80 gap-2 sm:gap-5'>
                     <div class='bg-fuchsia-600/70 w-auto p-2 rounded-full flex justify-center'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -190,7 +194,7 @@
                     </p>
                 </div>
                 <div
-                    class='flex flex-col items-center rounded-xl self-stretch w-full shadow p-4 bg-purple-600/60 gap-5'>
+                    class='flex flex-col items-center rounded-lg self-stretch w-full shadow p-4 bg-purple-600/60 gap-5'>
                     <div class='bg-white w-auto p-2 rounded-full flex justify-center'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -203,16 +207,16 @@
                         </svg>
                     </div>
                     <p class='font-semibold font-inter text-base text-center w-full text-white'>
-                        Multi-color pets
+                        Quality Pets
                     </p>
                     <p
                         class='font-medium text-white/90 font-monAt text-xs text-center sm:text-justify w-full sm:leading-6'>
-                        Discover our multi-color pets! With vibrant coats and unique patterns, each pet brings a burst
-                        of color, personality,
-                        and charm to your home, making them truly one-of-a-kind companions.
+                        we provide pets raised with love, care, and attention. Each pet is nurtured in a happy, healthy
+                        environment, ready to
+                        bring joy and companionship to your family
                     </p>
                 </div>
-                <div class='flex flex-col items-center rounded-xl self-stretch w-full shadow p-4 bg-white/80 gap-5'>
+                <div class='flex flex-col items-center rounded-lg self-stretch w-full shadow p-4 bg-white/80 gap-5'>
                     <div class='bg-yellow-400/70 w-auto p-2 rounded-full flex justify-center'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -225,16 +229,16 @@
                         </svg>
                     </div>
                     <p class='font-semibold font-inter text-base text-center w-full'>
-                        Multi-color pets
+                        Doctor Advise
                     </p>
                     <p
                         class='font-medium text-black/70 font-monAt text-xs text-center sm:text-justify w-full sm:leading-6'>
-                        Discover our multi-color pets! With vibrant coats and unique patterns, each pet brings a burst
-                        of color, personality,
-                        and charm to your home, making them truly one-of-a-kind companions.
+                        Our pet doctors provide expert advice and personalized guidance, ensuring your furry friend
+                        stays healthy, happy, and
+                        receives the best possible care for a long and joyful life
                     </p>
                 </div>
-                <div class='flex flex-col items-center rounded-xl self-stretch w-full shadow p-4 bg-white/80 gap-5'>
+                <div class='flex flex-col items-center rounded-lg self-stretch w-full shadow p-4 bg-white/80 gap-5'>
                     <div class='bg-pink-600/70 w-auto p-2 rounded-full flex justify-center'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -247,13 +251,13 @@
                         </svg>
                     </div>
                     <p class='font-semibold font-inter text-base text-center w-full'>
-                        Multi-color pets
+                        Home delivery
                     </p>
                     <p
                         class='font-medium text-black/70 font-monAt text-xs text-center sm:text-justify w-full sm:leading-6'>
-                        Discover our multi-color pets! With vibrant coats and unique patterns, each pet brings a burst
-                        of color, personality,
-                        and charm to your home, making them truly one-of-a-kind companions.
+                        Our reliable home delivery service ensures your new pet arrives safely, comfortably, and with
+                        the utmost care, right at
+                        your doorstep and on time, ready to bring joy and companionship to your home
                     </p>
                 </div>
             </div>
@@ -262,37 +266,63 @@
     <section class='w-full sm:w-[85%] mx-auto flex sm:flex-row flex-col items-center gap-2.5 sm:gap-5 sm:p-10 p-3'>
         <div class='sm:w-[40%] w-full grid grid-cols-3 gap-1 sm:gap-3 self-stretch'>
             <div class='rounded-2xl shadow flex flex-col justify-between items-center py-3 w-full bg-fuchsia-500/50'>
-                <img src='Image/white.png' class='object-cover w-[90%] mx-auto' alt='white' />
+                <div
+                    class='UnoC w-full flex flex-row items-center overflow-x-scroll snap-x snap-mandatory scroll-smooth'>
+                    <img src='Image/white.png' class='object-cover w-full mx-auto snap-center flex-shrink-0'
+                        alt='white' />
+                    <img src='Image/whitebI.png' class='object-cover w-full mx-auto snap-center flex-shrink-0'
+                        alt='white' />
+                    <img src='Image/whitebII.png' class='object-cover w-full mx-auto snap-center flex-shrink-0'
+                        alt='white' />
+                </div>
                 <div class='flex flex-col items-center w-full gap-2'>
-                    <p class='font-monAt text-sm font-semibold w-full text-center'>white puppy</p>
-                    <div class='w-[24px] h-[24px] flex justify-center bg-white rounded-full shadow mx-auto'>
+                    <p class='font-monAt text-sm font-semibold w-full text-center'>Breed puppy</p>
+                    <div onclick="cycle('UnoC')"
+                        class='w-[24px] h-[24px] flex justify-center bg-white rounded-full shadow mx-auto'>
                         <i class='material-icons text-fuchsia-500/60 text-sm self-center'>east</i>
                     </div>
                 </div>
             </div>
             <div class='rounded-2xl shadow flex flex-col justify-between items-center py-3 w-full bg-blue-400/50'>
-                <img src='Image/Havanese.png' class='object-cover w-[90%] mx-auto' alt='white' />
+                <div
+                    class='DosC w-full flex flex-row items-center overflow-x-scroll snap-x snap-mandatory scroll-smooth'>
+                    <img src='Image/Havanese.png' class='object-cover w-full mx-auto snap-center flex-shrink-0'
+                        alt='white' />
+                    <img src='Image/bbi.png' class='object-cover w-full mx-auto snap-center flex-shrink-0'
+                        alt='white' />
+                    <img src='Image/bbII.png' class='object-cover w-full mx-auto snap-center flex-shrink-0'
+                        alt='white' />
+                </div>
                 <div class='flex flex-col items-center w-full gap-2'>
                     <p class='font-monAt text-sm font-semibold w-full text-center'>Havanese puppy</p>
-                    <div class='w-[24px] h-[24px] flex justify-center bg-white rounded-full shadow mx-auto'>
+                    <div onclick="cycle('DosC')"
+                        class='w-[24px] h-[24px] flex justify-center bg-white rounded-full shadow mx-auto'>
                         <i class='material-icons text-blue-400/50 text-sm self-center'>east</i>
                     </div>
                 </div>
             </div>
             <div class='rounded-2xl shadow flex flex-col justify-between items-center py-3 w-full bg-yellow-400/50'>
-                <img src='Image/brown.png' class='object-cover w-[70%] mx-auto' alt='white' />
+                <div
+                    class='TresC w-full flex flex-row items-center overflow-x-scroll snap-x snap-mandatory scroll-smooth'>
+                    <img src='Image/brown.png' class='object-cover w-full mx-auto snap-center flex-shrink-0'
+                        alt='white' />
+                    <img src='Image/Ti.png' class='object-cover w-full mx-auto snap-center flex-shrink-0' alt='white' />
+                    <img src='Image/Tii.png' class='object-cover w-full mx-auto snap-center flex-shrink-0'
+                        alt='white' />
+                </div>
                 <div class='flex flex-col items-center w-full gap-2'>
-                    <p class='font-monAt text-sm font-semibold w-full text-center'>white puppy</p>
-                    <div class='w-[24px] h-[24px] flex justify-center bg-white rounded-full shadow mx-auto'>
+                    <p class='font-monAt text-sm font-semibold w-full text-center'>Rescue puppy</p>
+                    <div onclick="cycle('TresC')"
+                        class='w-[24px] h-[24px] flex justify-center bg-white rounded-full shadow mx-auto'>
                         <i class='material-icons text-yellow-400/50 text-sm self-center'>east</i>
                     </div>
                 </div>
             </div>
         </div>
         <div class='w-full sm:w-[60%] flex flex-col items-start self-stretch gap-2 justify-between'>
-            <p class='font-inter text-2xl font-black text-center sm:text-start w-full'>
+            <p class='font-monAt text-xl font-bold text-center sm:text-start w-full'>
                 Discover well-cared-for puppies ready for your family. </p>
-            <p class='font-inter text-xs text-black text-opacity-70 leading-6 sm:text-start text-center'>
+            <p class='font-inter text-xs text-black text-opacity-70 leading-6 sm:text-start text-justify'>
                 Looking for the perfect puppy to bring home? We offer a wide variety of breeds, all raised with love and
                 care. Each
                 puppy is healthy, happy, and eager to find a forever family. Whether you're searching for a playful
@@ -326,7 +356,7 @@
             </div>
         </div>
     </section>
-    <section class='flex flex-col items-center w-full sm:w-[85%] mx-auto justify-center gap-5 mt-10'>
+    <section class='flex flex-col items-center w-full sm:w-[85%] mx-auto justify-center gap-5 mt-[1rem]'>
         <div class='flex flex-col items-center sm:w-3/5 mx-auto w-full gap-1.5 px-3'>
             <p class='font-bold text-3xl text-center w-full font-monAt'>Find all our categories</p>
             <p class='font-medium text-black/70 text-xs text-center sm:w-3/5 w-full font-monAt'>
@@ -381,20 +411,86 @@
             </div>
         </div>
     </section>
+    <section class='w-[97%] sm:w-[85%] mx-auto flex flex-col items-center justify-center mt-[27px]'>
+        <div class='flex flex-col items-center sm:w-3/4 mx-auto w-full gap-1.5 px-3'>
+            <p class='font-bold text-3xl text-center w-full font-monAt'>Pet lovers words from our record</p>
+            <p class='font-medium text-black/70 text-xs text-center sm:w-3/4 w-full font-monAt'>
+                Here are some heartfelt words from our satisfied pet lovers, sharing their experiences and the joy our
+                pets have brought
+                into their lives. We take pride in connecting loving families with their perfect furry companions
+            </p>
+        </div>
+        <div class='flex flex-col sm:flex-row items-center w-full sm:gap-10 my-7'>
+            <img src='/Image/granny.webp' loading='lazy'
+                class='object-cover object-center sm:w-[55%] max-h-[250px] w-full rounded-lg shadow'
+                alt='pet lover granny' />
+            <section class='flex flex-row duration-500 items-center sm:w-[45%] w-full overflow-x-scroll py-3' id='head'>
+            </section>
+        </div>
+    </section>
     <script src="dist/output.js"></script>
-    <script>
-        function MT() {
-            const ele = document.querySelector('.sidebar');
-            if (ele.classList.contains('hidden')) {
-                ele.classList.remove('hidden');
-                ele.classList.add('flex');
-                localStorage.setItem('flex', 'true');
-            } else {
-                ele.classList.remove('flex');
-                ele.classList.add('hidden');
-                localStorage.setItem('flex', 'false');
-            }
-        }
+    <script type="text/babel" data-presets="react,stage-3">
+        let data = [
+            {
+                name: "Sally M",
+                title: 'Happy Pet Parent',
+                image: 'Image/sally.jpg',
+                text: `I had the best experience with this pet service! The team was so helpful, and the puppy I got is absolutely adorable and healthy. Their attention to detail and care for the animals is evident. Highly recommend!`
+            },
+            {
+                name: "John Donald",
+                title: 'First-Time Pet Owner',
+                image: 'Image/john.jpg',
+                text: `From the moment I inquired about adopting a pet, the service was top-notch. They guided me through the entire process, providing great advice from the pet doctor and ensuring the delivery went smoothly. Very satisfied!`
+            },
+            {
+                name: "Linda S.",
+                title: 'Satisfied Pet Doctor Client',
+                image: 'Image/linda.jpg',
+                text: `I was hesitant at first, but the pet doctor advice I received was invaluable. They truly care about the animals and their well-being. My new pet is a joy, and I couldn't be happier with the service!`
+            },
+            {
+                name: "Emily T",
+                title: 'Grateful Pet Adopter',
+                image: 'Image/emily.jpg',
+                text: `The staff at this pet service are so kind and professional. The pet I adopted is healthy and well-socialized, and I could tell they were raised with a lot of love. I'm so grateful for their help in finding the perfect companion!`
+            },
+        ];
+        const Example = () => {
+            const [count, setCount] = React.useState(0);
+            React.useEffect(() => {
+                document.title = `You clicked ${count} times`;
+            });
+            return (
+                <div className='flex flex-col items-start w-full gap-5' id='first'>
+                    <div className="flex flex-row items-center gap-2 justify-start">
+                        <img src={data[count].image} className='object-cover h-[40px] w-[40px] rounded-full shadow' loading='lazy' />
+                        <div className='flex flex-col items-start w-full gap-1'>
+                            <p className='font-semibold text-sm font-inter text-start w-full'>{data[count].name}</p>
+                            <small className='font-medium font-inter text-black text-opacity-50'>{data[count.title]}</small>
+                        </div>
+                    </div>
+                    <p
+                        className='duration-500  flex-row items-center font-inter leading-6 w-full text-xs font-medium text-black text-opacity-70'>
+                        {data[count].text}
+                    </p>
+                    <div className='flex flex-row items-center gap-3'>
+                        <button
+                            onClick={() => setCount(count - 1)}
+                            className='flex justify-center' disabled={count == 0}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={`${count == 0 ? 'text-opacity-30' : ''} text-black lucide lucide-circle-arrow-left`}><circle cx="12" cy="12" r="10" /><path d="M16 12H8" /><path d="m12 8-4 4 4 4" /></svg>
+                        </button>
+                        <button
+                            onClick={() => setCount(count + 1)}
+                            className='flex justify-center' disabled={count == 3}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={`${count == 3 ? 'text-opacity-30' : ''} text-black lucide lucide-circle-arrow-right`}><circle cx="12" cy="12" r="10" /><path d="M8 12h8" /><path d="m12 16 4-4-4-4" /></svg>
+                        </button>
+                    </div>
+                </div>
+            );
+        };
+        const root = ReactDOM.createRoot(document.getElementById("head"))
+        root.render(<Example />);
     </script>
 </body>
 

@@ -5,6 +5,7 @@ module.exports = {
    output: {
       path: path.join(__dirname, 'dist'),
       filename: 'output.js',
+      iife: true,
    },
    mode: 'development',
 };
