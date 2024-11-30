@@ -346,7 +346,7 @@
                         <path d="M7 3.3a1 1 0 1 1 5 8.6 1 1 0 1 0 5 8.6" />
                         <circle cx="12" cy="12" r="10" />
                     </svg>
-                    <p class='font-inter font-semibold text-start text-sm self-center sdk'>
+                    <p class='font-inter font-semibold text-start text-sm self-center'>
                         Most awaited lecture installed here
                     </p>
                 </div>
@@ -492,7 +492,7 @@
             </ul>
         </div>
     </footer>
-    <script src="dist/output.js"></script>
+    <script src="output.js"></script>
     <script type="text/babel" data-presets="react,stage-3">
         let data = [
             {
@@ -555,12 +555,6 @@
         };
         const root = ReactDOM.createRoot(document.getElementById("head"))
         root.render(<Example />);
-    </script>
-    <script>
-        window.onselectstart = (e) => {
-            const select = window.getSelection();
-            console.log(select.focusNode.data.replace("\n", '').trim().toString());
-        }
     </script>
 </body>
 
